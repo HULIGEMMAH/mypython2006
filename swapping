@@ -1,0 +1,6 @@
+a=10
+b=15
+print("huligemma-cx09")
+print("before swapping:a=",a,",b=",b)
+a ,b = b,a
+print("after swapping:",a, ",b=",b)
