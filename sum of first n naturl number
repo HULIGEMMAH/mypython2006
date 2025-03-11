@@ -1,0 +1,5 @@
+def sum_natural(n):
+    return (n * (n + 1)) // 2  
+
+n = int(input("Enter a number: "))
+print("Sum of first", n, "natural numbers is:", sum_natural(n))
