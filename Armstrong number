@@ -1,0 +1,4 @@
+def armstrong_in_range(start=1, end=1000):
+    return [num for num in range(start, end+1) if is_armstrong(num)]
+
+print(armstrong_in_range(1, 10000))  
