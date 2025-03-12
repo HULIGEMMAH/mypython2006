@@ -1,0 +1,4 @@
+#formated string
+a=int(input("enter the first number"))
+b=int(input("enter the secand number"))
+print(f"num of {a} and {b}")
