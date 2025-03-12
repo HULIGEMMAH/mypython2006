@@ -1,0 +1,13 @@
+def sum_of_evens(start, end):
+    total = 0
+    for num in range(start, end + 1):
+        if num % 2 == 0:  
+            total += num
+    return total
+
+
+start = int(input("Enter start of range: "))
+end = int(input("Enter end of range: "))
+
+
+print(f"Sum of even numbers from {start} to {end} is {sum_of_evens(start, end)}")
