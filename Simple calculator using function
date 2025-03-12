@@ -1,0 +1,18 @@
+def calculator(a, b, operation):
+    if operation == '+':
+        return a + b
+    elif operation == '-':
+        return a - b
+    elif operation == '*':
+        return a * b
+    elif operation == '/':
+        return "Error! Division by zero." if b == 0 else a / b
+    else:
+        return "Invalid operation
+
+num1 = float(input("Enter first number: "))
+op = input("Enter operation (+, -, *, /): ")
+num2 = float(input("Enter second number: "
+
+result = calculator(num1, num2, op)
+print("Result:", result)
