@@ -1,0 +1,8 @@
+def even_or_odd(n=10):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+print(even_or_odd())     
+print(even_or_odd(7))    
