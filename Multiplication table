@@ -1,0 +1,7 @@
+def multiplication_table(n, up_to=10):
+    for i in range(1, up_to + 1):
+        print(f"{n} × {i} = {n * i}")
+
+num = int(input("Enter a number: "))
+multiplication_table(num)
+print ("huligemma -09")
