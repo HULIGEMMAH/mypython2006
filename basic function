@@ -1,0 +1,4 @@
+#basic fuction
+def fun():
+  print("hello,python")
+  fun(10,20)
