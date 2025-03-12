@@ -1,0 +1,5 @@
+import math
+angle=float(int(input("enter an angle")))
+print=math.sin(angle)
+print("sine of angles",math.sin(radian))
+print("cosine of angles",math.cos(radian))
