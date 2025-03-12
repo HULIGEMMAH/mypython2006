@@ -1,0 +1,15 @@
+def power(base, exponent):
+    result = 1
+    for _ in range(abs(exponent)): 
+or absolute value of exponent
+        result *= base
+
+    
+    return result if exponent >= 0 else 1 / result
+
+
+x = float(input("Enter base: "))
+y = int(input("Enter exponent: "))
+
+
+print(f"{x}^{y} = {power(x, y)}")
