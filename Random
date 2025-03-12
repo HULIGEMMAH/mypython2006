@@ -1,0 +1,11 @@
+import random
+
+def generate_random_number(start=1, end=100):
+    """Generates a random number between start and end (default: 1 to 100)."""
+    return random.randint(start, end)
+
+# Calling the function without arguments (uses default values)
+print(generate_random_number())  # Random number between 1 and 100
+
+# Calling the function with custom arguments
+print(generate_random_number(50, 60))  # Random number between 50 and 60
