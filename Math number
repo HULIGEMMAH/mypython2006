@@ -1,0 +1,15 @@
+import math
+
+def is_armstrong(n=153):
+    num_str = str(n)
+    power = len(num_str)
+    
+    # Cal
+    sum_of_digits = sum(math.pow(int(digit), power) for digit in num_str    
+    return int(sum_of_digits) == n  
+
+
+print(is_armstrong())       
+print(is_armstrong(9474))    
+print(is_armstrong(123))    
+
