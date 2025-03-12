@@ -1,0 +1,14 @@
+import math
+
+def is_armstrong(**kwargs):
+    n = kwargs.get('num', 153)  # Default value is 153 if not provided
+    num_str = str(n)
+    power = len(num_str)
+    
+    # Calculate sum of digits raised to the power
+    sum_of_digits = sum(math.pow(int(digit), power) for digit in num_str)
+    
+    return int(sum_of_digits) == n  # Convert to int to avoid floating-point issues
+
+# Test cases using keyword arguments
+print(is_armstrong(num=153))   
