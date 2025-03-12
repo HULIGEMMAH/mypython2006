@@ -1,0 +1,15 @@
+def reverse_number(n):
+    rev = 0
+    is_negative = n < 0  
+    n = abs(n)  
+
+    while n > 0:
+        rev = (rev * 10) + (n % 10)  
+        n //= 10  
+
+    return -rev if is_negative else rev  
+
+
+num = int(input("Enter a number: "))
+print("Reversed number:", reverse_number(num))
+print ("huligemma -09")
