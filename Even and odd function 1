@@ -1,0 +1,7 @@
+def even_or_odd(n):
+    return "Even" if n % 2 == 0 else "Odd"
+
+
+num = int(input("Enter a number: "))
+print("The number is:", even_or_odd(num))
+print ("huligemma -09")
