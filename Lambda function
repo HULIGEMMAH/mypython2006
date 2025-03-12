@@ -1,0 +1,6 @@
+square = lambda x: x ** 2
+
+
+num = float(input("Enter a number: "))
+print("Square:", square(num))
+print ("huligemma -09")
