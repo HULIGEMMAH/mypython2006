@@ -1,0 +1,7 @@
+my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+
+if "age" in my_dict:
+    print("Key exists!")  
+else:
+    print("Key not found!")
+  print ("huligemma -09")
