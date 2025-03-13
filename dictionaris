@@ -1,0 +1,6 @@
+a = {
+    "name":"huligemma",
+    "age":18,
+    "weight":40
+}
+a
