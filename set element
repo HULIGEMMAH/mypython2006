@@ -1,0 +1,16 @@
+
+def check_element_in_set(my_set, element):
+    if element in my_set:
+        return True
+    else:
+        return False
+
+
+my_set = {1, 2, 3, 4, 5}
+element = int(input("Enter an element to check: "))
+
+if check_element_in_set(my_set, element):
+    print(f"{element} is present in the set.")
+else:
+    print(f"{element} is not present in the set.")
+    print("huligemma -09")
