@@ -1,0 +1,18 @@
+class Parent:
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        return f"Parent Name: {self.name}"
+
+class Child(Parent):
+    def __init__(self, name, age):
+        super().__init__(name)  # Calls Parent's constructor
+        self.age = age
+
+    def display(self):
+        return f"{super().display()}, Child Age: {self.age}"
+
+# Creating an object
+child = Child("John", 10)
+print(child.display())  # Output: Parent Name: John, Child Age: 10
