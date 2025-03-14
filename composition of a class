@@ -1,0 +1,22 @@
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    def __init__(self, name):
+        self.name = name
+
+    @abstractmethod
+    def area(self):
+        pass
+
+    def display(self):  
+        return f"This is a {self.name}"
+
+class Circle(Shape):
+    def __init__(self, radius):
+        super().__init__("Circle")
+        self.radius = radius
+
+    def area(self):  
+        return 3.14 * self.radius ** 2
+
+c = Circle(5)
