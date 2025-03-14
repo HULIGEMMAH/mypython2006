@@ -1,0 +1,32 @@
+class Person:
+    def __init__(self, name, age):
+        self._name = name  # Private-like attribute (by convention)
+        self._age = age  
+
+    # Getter for name
+    def get_name(self):
+        return self._name  
+
+    # Setter for name
+    def set_name(self, new_name):
+        if isinstance(new_name, str) and new_name.strip():
+            self._name = new_name
+        else:
+            raise ValueError("Invalid name")
+
+    # Getter for age
+    def get_age(self):
+        return self._age  
+
+    # Setter for age
+    def set_age(self, new_age):
+        if isinstance(new_age, int) and new_age > 0:
+            self._age = new_age
+        else:
+            raise ValueError("Age must be a positive integer")
+
+# Usage
+person = Person("Alice", 30)
+print(person.get_name())  # Alice
+person.set_name("Bob")
+print(person.get_name())  # Bob
