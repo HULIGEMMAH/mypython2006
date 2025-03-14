@@ -1,0 +1,15 @@
+class Parent1:
+    def method1(self):
+        return "Method from Parent1"
+
+class Parent2:
+    def method2(self):
+        return "Method from Parent2"
+
+class Child(Parent1, Parent2):
+    def method3(self):
+        return "Method from Child"
+
+obj = Child()
+print(obj.method1())  
+print(obj.method2())
