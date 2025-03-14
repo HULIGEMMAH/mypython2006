@@ -1,0 +1,9 @@
+class priya:
+  def __init__(self):
+    self.pub = "ok"
+    self.__nisha="not ok"
+  def deep_private(self):
+      print(self.__nisha)
+neha=priya()
+print(neha.pub)
+neha.deep_private()
