@@ -1,0 +1,9 @@
+class Example:
+    def __init__(self, value):
+        self.value = value  
+
+    def instance_method(self):
+        return f"Instance Method: {self.value}"
+
+obj = Example(10)
+print(obj.instance_method())  
