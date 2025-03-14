@@ -1,0 +1,16 @@
+class Grandparent:
+    def show_grandparent(self):
+        return "This is the Grandparent class"
+
+class Parent(Grandparent):
+    def show_parent(self):
+        return "This is the Parent class"
+
+class Child(Parent):
+    def show_child(self):
+        return "This is the Child class"
+
+c = Child()
+print(c.show_grandparent())  
+print(c.show_parent())       
+print(c.show_child()) 
