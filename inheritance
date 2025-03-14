@@ -1,0 +1,8 @@
+class Animal:
+  def save(self):
+    print("I am an animal")
+class dog (Animal):
+  def save (self):
+    print("I bark")
+dog=dog()
+dog.save()
